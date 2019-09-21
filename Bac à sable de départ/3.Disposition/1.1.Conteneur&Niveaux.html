@@ -35,48 +35,53 @@
 
 
 <!-- Début de la leçon -->
-<br><br>
-<h4 class="title is-3">Media : </h4>
 
-<div class="">
-    <!-- Le media ne grow et shrink pas, l'image reste telle quelle. -->
-    <div class="">
-        <img src="https://picsum.photos/200/300" alt="">
-    </div>
-    <div class="">
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur omnis expedita natus ipsam, reiciendis odio! Fugit saepe maxime omnis architecto eum est rem adipisci pariatur quaerat dignissimos, perspiciatis quidem magni. Quia dolorum veniam tempora ea perspiciatis quaerat magnam aspernatur dolores. Aut praesentium ipsam eveniet repellendus dicta. Reprehenderit eum iusto, quibusdam pariatur assumenda incidunt illo vero quo maxime, doloribus molestias quae amet quasi atque cupiditate. Exercitationem quas dolorum debitis quis quidem dicta deserunt! Labore praesentium dolor aperiam reprehenderit blanditiis, omnis in, architecto fuga, cupiditate dolorem quaerat incidunt similique quam voluptatibus ad impedit ipsam itaque et nostrum dolore. Accusamus necessitatibus porro quidem.
-    </div>
-</div>
-
-<br><br>
-<h4 class="title is-3">"Hero", une banniére full-width : </h4>
+<h4 class="title is-3">Le conteneur : </h4>
 <!-- 
-    taille : 
-    is-fullheight
-    is-large
-    is-medium
+desktop max-width 960px.
+widescreen max-width 1152px.
+fullhd  max-width 1344px.
  -->
- <!-- 
-     pour le contenu :
-     hero-head : contenu toujours en haut 
-     hero-body : toujours centré
-     hero-foot : toujours en bas
-  -->
-<section class=" is-primary">
+<!-- à un écart sur les côtés jusqu'à 1024px -->
+<div class="container  has-background-info">Hello</div>
 
-        <div class="">
-          <div class="container">
-            <h1 class="title">
-              Voici un titre
-            </h1>
-            <h2 class="subtitle">
-              Et un sous-titre
-            </h2>
-          </div>
-          
-        </div>
+<!-- pour avoir toujours 32px des deux côtés, container is-fluid -->
+<div class="container is-fluid  has-background-warning">Hello</div>
 
-</section>
+
+<!-- deviens un conteneur à partir de widescreen 1216px -->
+<div class="container is-widescreen  has-background-success">Hello</div>
+
+
+<!-- deviens un conteneur à partir de fullhd 1408px -->
+<div class="container is-fullhd  has-background-black">Hello</div>
+
+
+<br><br>
+<h4 class="title is-3">Les niveaux : </h4>
+
+
+<!-- Main container -->
+<!-- Rajouter is-mobile si on veut qu'il soit honrizontale aussi
+sur mobile  -->
+<nav class="level is-mobile">
+
+    <!-- Gauche -->
+    <div class="level-left">
+        Hello World
+    </div>
+
+    <!-- Centré -->
+    <div class="level-item">
+        Hello World
+    </div>
+
+    <!-- Droite -->
+    <div class="level-right">
+     <p>Hello World</p>
+    </div>
+  </nav>
+
 
 <br><br><br><br><br><br>
 <br><br><br><br><br><br>
